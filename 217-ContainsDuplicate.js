@@ -13,7 +13,7 @@
 // let containsDuplicates = containsDuplicate(nums);
 // console.log(containsDuplicates);
 
-//sorting two elements
+// sorting two elements
 const containsDuplicate = (nums) => {
   nums.sort((a, b) => a - b);
   console.log(nums);
@@ -29,13 +29,17 @@ const nums = [1, 2, 3, 4, 5, 2];
 console.log(containsDuplicate(nums));
 
 //has set solution
-// var containsDuplicate = function(nums) {
-//     const set = new Set();
-//     for (const num of nums) {
-//         if (set.has(num)) {
-//             return true; // Found a duplicate
-//         }
-//         set.add(num); // Add unique element to the set
+// var containsDuplicate = function (nums) {
+//   const set = new Set();
+
+//   for (const num of nums) {
+//     if (set.has(num)) {
+//       console.log(num);
+//       return true;
 //     }
-//     return false; // No duplicates found
+//     set.add(num); // Add unique element to the set
+//   }
+//   return false; // No duplicates found
 // };
+// const nums = [1, 2, 3, 4, 5, 2];
+// console.log(containsDuplicate(nums));
