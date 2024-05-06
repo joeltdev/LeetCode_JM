@@ -1,4 +1,4 @@
-function isSameTree(p, q) {
+var isSameTree = function (p, q) {
   if (p === null && q === null) {
     return true;
   }
@@ -9,10 +9,4 @@ function isSameTree(p, q) {
     return false;
   }
   return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-}
-
-let p = [1, 2];
-let q = [1, null, 2];
-let isSameTrees = isSameTree(p, q);
-
-isSameTrees();
+};
